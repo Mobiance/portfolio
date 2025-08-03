@@ -39,7 +39,13 @@ const { Content: About } = await render(about!);
 				{quickInfo.map((info) => (
 					<li>
 						<Icon type={info.data.icon.type} name={info.data.icon.name as any} width={24} height={24} class='glow-icon' />
-						<span>{info.data.text}</span>
+						{info.data.icon.name === 'mail' ? (
+							<a href={`mailto:${info.data.text}`}>
+								<span>{info.data.text}</span>
+							</a>
+						) : (
+							<span>{info.data.text}</span>
+						)}
 					</li>
 				))}
 			</ul>

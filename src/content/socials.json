@@ -16,5 +16,14 @@
     },
     "text": "LinkedIn",
     "link": "https://linkedin.com/in/mobiance"
+  },
+  {
+    "id": 3,
+    "icon": {
+      "type": "lucide",
+      "name": "file-text"
+    },
+    "text": "Resume",
+    "link": "https://drive.google.com/file/d/1bgfKcBdlKxwOjUwQJN7MDYvOWS3-GU8L/view"
   }
 ]

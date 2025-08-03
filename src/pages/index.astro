@@ -12,13 +12,14 @@ import { getEntry } from 'astro:content';
 import { render } from 'astro:content';
 import { name, openGraph } from 'spectre:globals';
 
-const [posts, projects, about, workExperience, quickInfo, socials] = await Promise.all([
+const [posts, projects, about, workExperience, quickInfo, socials, tags] = await Promise.all([
 	getCollection('posts', (post) => post.data.draft !== true),
 	getCollection('projects'),
 	getEntry('other', 'about'),
 	getCollection('workExperience'),
 	getCollection('quickInfo'),
-	getCollection('socials')
+	getCollection('socials'),
+	getCollection('tags')
 ]);
 
 // biome-ignore lint/style/noNonNullAssertion: Should always be defined.
@@ -69,18 +70,21 @@ const { Content: About } = await render(about!);
 		</Card>
 		<Card>
 			<div class="header-container">
-				<Icon type='lucide' name="rss" width={24} height={24} class='glow-icon' />
-				<h2>Latest Posts</h2>
+				<Icon type='lucide' name="briefcase-business" width={24} height={24} class='glow-icon' />
+				<h2>Work Experience</h2>
 			</div>
-			<div class="content-container">
-				{posts.sort((a, b) => b.data.createdAt.getTime() - a.data.createdAt.getTime()).slice(0, 2).map((post) => (
-					<a href={`/blog/${post.id}`} class="post-container">
-						<div class="post-header">
-							<h3>{post.data.title}</h3>
-							<span class="post-date">{post.data.createdAt.toLocaleDateString()}</span>
-						</div>
-						<span>{post.data.description}</span>
-					</a>
+			<div class="work-experience-container">
+				{workExperience.reverse().map((entry) => (
+					<div class="work-experience-entry">
+						<span class="work-experience-duration">{entry.data.duration}</span>
+						<h3 class="work-experience-company">{entry.data.company}</h3>
+						<span class="work-experience-role">{entry.data.title}</span>
+						<ul class="work-experience-desc">
+							{entry.data.description.map((item) => (
+								<li>{item}</li>
+							))}
+						</ul>
+					</div>
 				))}
 			</div>
 		</Card>
@@ -103,16 +107,14 @@ const { Content: About } = await render(about!);
 		</Card>
 		<Card>
 			<div class="header-container">
-				<Icon type='lucide' name="briefcase-business" width={24} height={24} class='glow-icon' />
-				<h2>Work Experience</h2>
+				<Icon type='lucide' name="code" width={24} height={24} class='glow-icon' />
+				<h2>Skills</h2>
 			</div>
-			<div class="work-experience-container">
-				{workExperience.reverse().map((entry) => (
-					<div class="work-experience-entry">
-						<span class="work-experience-duration">{entry.data.duration}</span>
-						<h3 class="work-experience-company">{entry.data.company}</h3>
-						<span class="work-experience-role">{entry.data.title}</span>
-						<p class="work-experience-desc">{entry.data.description}</p>
+			<div class="tags-container">
+				{tags.map((tag) => (
+					<div class="tag">
+						<Icon type={tag.data.icon.type} name={tag.data.icon.name as any} width={24} height={24} />
+						<span>{tag.data.name}</span>
 					</div>
 				))}
 			</div>

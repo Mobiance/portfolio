@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "name": "Go",
     "icon": {
       "type": "lucide",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "Rust",
     "icon": {
       "type": "lucide",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "Python",
     "icon": {
       "type": "lucide",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "id": "4",
+    "id": 4,
     "name": "JavaScript",
     "icon": {
       "type": "lucide",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "id": "5",
+    "id": 5,
     "name": "TypeScript",
     "icon": {
       "type": "lucide",
@@ -40,7 +40,7 @@
     }
   },
   {
-    "id": "6",
+    "id": 6,
     "name": "Bash",
     "icon": {
       "type": "lucide",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "id": "7",
+    "id": 7,
     "name": "NestJS",
     "icon": {
       "type": "lucide",
@@ -56,7 +56,7 @@
     }
   },
   {
-    "id": "8",
+    "id": 8,
     "name": "NextJS",
     "icon": {
       "type": "lucide",
@@ -64,7 +64,7 @@
     }
   },
   {
-    "id": "9",
+    "id": 9,
     "name": "FastAPI",
     "icon": {
       "type": "lucide",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "id": "10",
+    "id": 10,
     "name": "PostgreSQL",
     "icon": {
       "type": "lucide",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "id": "11",
+    "id": 11,
     "name": "Spanner",
     "icon": {
       "type": "lucide",
@@ -88,7 +88,7 @@
     }
   },
   {
-    "id": "12",
+    "id": 12,
     "name": "Cassandra",
     "icon": {
       "type": "lucide",
@@ -96,7 +96,7 @@
     }
   },
   {
-    "id": "13",
+    "id": 13,
     "name": "MongoDB",
     "icon": {
       "type": "lucide",
@@ -104,7 +104,7 @@
     }
   },
   {
-    "id": "14",
+    "id": 14,
     "name": "DynamoDB",
     "icon": {
       "type": "lucide",
@@ -112,7 +112,7 @@
     }
   },
   {
-    "id": "15",
+    "id": 15,
     "name": "Kafka",
     "icon": {
       "type": "lucide",
@@ -120,7 +120,7 @@
     }
   },
   {
-    "id": "16",
+    "id": 16,
     "name": "Redis",
     "icon": {
       "type": "lucide",
@@ -128,7 +128,7 @@
     }
   },
   {
-    "id": "17",
+    "id": 17,
     "name": "Docker",
     "icon": {
       "type": "lucide",
@@ -136,7 +136,7 @@
     }
   },
   {
-    "id": "18",
+    "id": 18,
     "name": "Git",
     "icon": {
       "type": "lucide",
@@ -144,7 +144,7 @@
     }
   },
   {
-    "id": "19",
+    "id": 19,
     "name": "GitHub Actions",
     "icon": {
       "type": "lucide",
@@ -152,7 +152,7 @@
     }
   },
   {
-    "id": "20",
+    "id": 20,
     "name": "Neo4j",
     "icon": {
       "type": "lucide",
@@ -160,7 +160,7 @@
     }
   },
   {
-    "id": "21",
+    "id": 21,
     "name": "OpenAI API",
     "icon": {
       "type": "lucide",
@@ -168,7 +168,7 @@
     }
   },
   {
-    "id": "22",
+    "id": 22,
     "name": "Neovim",
     "icon": {
       "type": "lucide",

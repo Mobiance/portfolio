@@ -4,20 +4,35 @@
     "duration": "Jun 2025 – Present",
     "company": "i2interfaces",
     "title": "Software Development Engineer",
-    "description": "Built scalable microservices in Go using PostgreSQL, Kafka, and Redis; handled 50k+ daily API requests. Developed a Kafka-backed notification system using AWS SES, reducing email delivery latency by 40%. Enhanced internal communication layer between services, cutting payload size by 25% and boosting performance. Led feature rollouts and integrations with the frontend team, improving deployment velocity and UX consistency."
+    "description": [
+      "Built scalable microservices in Go using PostgreSQL, Kafka, and Redis; handled 50k+ daily API requests.",
+      "Developed a Kafka-backed notification system using AWS SES, reducing email delivery latency by 40%.",
+      "Enhanced internal communication layer between services, cutting payload size by 25% and boosting performance.",
+      "Led feature rollouts and integrations with the frontend team, improving deployment velocity and UX consistency."
+    ]
   },
   {
     "id": 2,
     "duration": "Feb 2025 – Jun 2025",
     "company": "i2interfaces",
     "title": "Backend Intern (Phase 2)",
-    "description": "Rewrote Portal Graph Service in Go with Spanner Graph SQL and Neo4j, reducing traversal latency by 35%. Integrated AI modules for resume scoring and job matching into InfiniteInterfaces’ backend system. Developed backend services for OpenSearch-powered fast, scalable job/user search infrastructure. Improved CI/CD pipeline with Docker and GitHub Actions; reduced deploy time by 50%."
+    "description": [
+      "Rewrote Portal Graph Service in Go with Spanner Graph SQL and Neo4j, reducing traversal latency by 35%.",
+      "Integrated AI modules for resume scoring and job matching into InfiniteInterfaces’ backend system.",
+      "Developed backend services for OpenSearch-powered fast, scalable job/user search infrastructure.",
+      "Improved CI/CD pipeline with Docker and GitHub Actions; reduced deploy time by 50%."
+    ]
   },
   {
     "id": 3,
     "duration": "Aug 2024 – Feb 2025",
     "company": "i2interfaces",
     "title": "Software Intern (Phase 1)",
-    "description": "Worked with MERN stack to design and maintain internal tools; assisted senior developers in production builds. Built and managed REST APIs, participated in code reviews, and followed team coding standards. Contributed to embedded model integration for resume parsing and profile scoring. Resolved full-stack bugs and maintained clean, testable code; stayed up-to-date with backend trends."
+    "description": [
+      "Worked with MERN stack to design and maintain internal tools; assisted senior developers in production builds.",
+      "Built and managed REST APIs, participated in code reviews, and followed team coding standards.",
+      "Contributed to embedded model integration for resume parsing and profile scoring.",
+      "Resolved full-stack bugs and maintained clean, testable code; stayed up-to-date with backend trends."
+    ]
   }
 ]

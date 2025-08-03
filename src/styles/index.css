@@ -56,29 +56,54 @@
   color: #c7c7c7;
 }
 
-.work-experience-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.tags-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
-.work-experience-entry:not(:last-of-type) {
-  border-bottom: 1px solid #353535;
-  padding-bottom: 1rem;
+.tag {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	padding: .25rem .5rem;
+	background-color: #252525;
+	border: 1px solid #353535;
+}
+.work-experience-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.work-experience-entry {
+	display: flex;
+	flex-direction: column;
 }
 
 .work-experience-duration {
-  font-size: .925rem;
+	font-size: .875em;
+	color: #a5a5a5;
 }
 
 .work-experience-company {
-  margin-top: .25rem;
-  margin-bottom: .5rem;
+	font-size: 1.125em;
+	margin: 0;
+	margin-top: .25rem;
 }
 
 .work-experience-role {
-  margin-bottom: .75rem;
+	font-size: 1em;
+	color: #d5d5d5;
 }
+
+.work-experience-desc {
+	margin-top: .5rem;
+	font-size: .875em;
+	color: #a5a5a5;
+	padding-left: 1rem;
+}
+
 
 .socials-link {
   color: white;

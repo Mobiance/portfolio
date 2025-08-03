@@ -43,14 +43,16 @@ const workExperience = defineCollection({
     title: z.string(),
     company: z.string(),
     duration: z.string(),
-    description: z.string(),
+    description: z.array(z.string()),
   })
 });
 
 const tags = defineCollection({
   loader: file("src/content/tags.json"),
   schema: z.object({
-    id: z.string()
+    id: z.number(),
+    name: z.string(),
+    icon: z.union([lucideIconSchema, simpleIconSchema]),
   })
 });
 

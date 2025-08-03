@@ -3,17 +3,32 @@
     "id": 1,
     "icon": {
       "type": "lucide",
-      "name": "cake"
+      "name": "graduation-cap"
     },
-    "text": "1 year old"
+    "text": "Expected 2025"
   },
   {
     "id": 2,
     "icon": {
       "type": "lucide",
-      "name": "earth"
+      "name": "map-pin"
     },
-    "type": "lucide",
-    "text": "Made in Germany"
+    "text": "Chh. Sambhajinagar, Maharashtra"
+  },
+  {
+    "id": 3,
+    "icon": {
+      "type": "lucide",
+      "name": "phone"
+    },
+    "text": "+91 78879 01549"
+  },
+  {
+    "id": 4,
+    "icon": {
+      "type": "lucide",
+      "name": "mail"
+    },
+    "text": "contact.shubhamsharma25@gmail.com"
   }
 ]
